@@ -40,7 +40,9 @@ const Wheel = () => {
 				break;
 			default: break;
 		}
-	}
+	};
+
+
 	const roulette_props = {
 		roulette_img_under_highlight,
 		roulette_img_on_highlight,
@@ -57,7 +59,6 @@ const Wheel = () => {
 		on_complete,
 		has_reset: true,
 		start_text: 'QUAY',
-		reset_text: 'QUAY TIẾP'
 	};
 
 	return (
@@ -70,7 +71,11 @@ const Wheel = () => {
 					<div className="reward">
 						<p>Chúc mừng bạn đã trúng {prize}</p>
 						<img src={prizeImg} alt={prize}></img>
-						<button className="btn-close" onClick={() => { setShowReward(false) }}>Đóng</button>
+						<button className="btn-close" onClick={() => {
+							setShowReward(false);
+							const $ = s => document.querySelector(s);
+							$('.reset-btn').click();
+						}}>Đóng</button>
 					</div>
 					<div className="mask"></div>
 				</div>

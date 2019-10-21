@@ -4,8 +4,11 @@
 	padding-top: 450px;
 }
 
-.start-btn,
 .reset-btn {
+	display: none;
+}
+
+.start-btn {
 	background: #fff;
 	display: flex;
 	align-items: center;
@@ -21,8 +24,7 @@
 	border: 3px solid white;
 }
 
-.start-btn:hover,
-.reset-btn:hover {
+.start-btn:hover {
 	background: rgb(238, 81, 24);
 	color: white;
 }
