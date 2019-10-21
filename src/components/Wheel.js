@@ -55,8 +55,9 @@ const Wheel = () => {
 			'serum',
 		],
 		on_complete,
-		has_reset: false,
+		has_reset: true,
 		start_text: 'QUAY',
+		reset_text: 'QUAY TIẾP'
 	};
 
 	return (

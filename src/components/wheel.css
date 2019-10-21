@@ -4,14 +4,15 @@
 	padding-top: 450px;
 }
 
-.start-btn {
+.start-btn,
+.reset-btn {
 	background: #fff;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	padding-bottom: 10px;
 	padding-top: 10px;
-	margin-bottom: 50px;
+	margin-top: 40px;
 	border-radius: 12px;
 	width: 180px;
 	height: 35px;
@@ -20,7 +21,8 @@
 	border: 3px solid white;
 }
 
-.start-btn:hover {
+.start-btn:hover,
+.reset-btn:hover {
 	background: rgb(238, 81, 24);
 	color: white;
 }
@@ -32,7 +34,7 @@
 	width: 800px;
 	height: 500px;
 	/* margin-top: -250px;*/
-	margin-left: -400px; 
+	margin-left: -400px;
 	z-index: 100;
 	background: white;
 	display: flex;
