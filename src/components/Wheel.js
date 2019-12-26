@@ -5,7 +5,8 @@ import highlight_img from '../images/hightlight.png';
 import pointer_img from '../images/pointer.png';
 import roulette_img_under_highlight from '../images/rou_under_high.png';
 import roulette_img_on_highlight from '../images/rou_on_high.png';
-
+import CustomerFormInput from './CustomerFormInput';
+import LockModal from './LockModal'
 const Wheel = () => {
 	const [prize, setPrize] = useState('');
 	const [prizeImg, setPrizeImg] = useState('');
@@ -65,6 +66,8 @@ const Wheel = () => {
 		<>
 			<div className='game-box'>
 				<Roulette {...roulette_props} />
+				<CustomerFormInput></CustomerFormInput>
+				<LockModal />
 			</div>
 			{showReward
 				? <div>
