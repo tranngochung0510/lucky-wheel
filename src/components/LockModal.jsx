@@ -18,6 +18,9 @@ export default function LockModal(props) {
         username:name,
         password:password
       }).then(res=>{
+        // console.log(res.data.access_token);
+        localStorage.setItem('token',res.data.access_token);
+        axios.defaults.headers.common['Authorization'] = `Bearer ${res.data.access_token}`;
           setError(false);
           setOpen(false);
       }).catch(error=>{
